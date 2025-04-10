@@ -16,10 +16,16 @@ export default function PostHero({ post, siteInfo }) {
     return <></>
   }
 
+  // 调试代码：检查标题和全屏状态
+  console.log('Post title:', post.title)
+  console.log('Full width mode:', fullWidth)
+
   // 文章全屏隐藏标头
   if (fullWidth) {
     return <div className='my-8' />
   }
+  // ...其余代码保持不变
+}
 
   const headerImage = post?.pageCover ? post.pageCover : siteInfo?.pageCover
 
