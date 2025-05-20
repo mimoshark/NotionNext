@@ -11,24 +11,26 @@ const Style = () => {
         background-color: #DCE8F8/* 背景色为浅蓝色 */
     }
     .dark body{
-        background-color: #03477C;/* 当启用暗色模式时，设置背景颜色为黑色 */
+        background-color: #03477C;/* 当启用暗色模式时，设置背景颜色为深蓝色 */
     }
- 
-    /*  菜单下划线动画 */
-    #theme-hexo .menu-link {
-        text-decoration: none; /* 移除菜单链接的默认下划线 */
-        background-image: linear-gradient(#B8CBFA, #928CEE); /* 创建从浅蓝色到紫色的渐变背景 */
-        background-repeat: no-repeat;/* 禁止背景图像重复 */
-        background-position: bottom center;/* 背景图像定位到底部居中 */
-        background-size: 0 2px;/* 初始时，背景的宽度为 0，背景的高度为 2px，表示没有显示的下划线 */
-        transition: background-size 100ms ease-in-out;/* 设置背景大小变化的过渡动画，持续 100ms，使用 ease-in-out 缓动函数 */
-    }
+/* 菜单下划线动画 */
+#theme-hexo .menu-link {
+    text-decoration: none; /* 移除菜单链接的默认下划线 */
+    background-image: linear-gradient(#B8CBFA, #928CEE); /* 创建从浅蓝色到紫色的渐变背景 */
+    background-repeat: no-repeat;/* 禁止背景图像重复 */
+    background-position: bottom center;/* 背景图像定位到底部居中 */
+    background-size: 0 2px;/* 初始时，背景的宽度为 0，背景的高度为 2px，表示没有显示的下划线 */
+    transition: background-size 100ms ease-in-out, font-size 0.3s ease, font-weight 0.3s ease; /* 增加文字大小和粗细变化的过渡动画 */
+}
 
-/* 当鼠标悬停在右侧文章菜单链接上时，展开渐变的下划线 */
+/* 当鼠标悬停在右侧文章菜单和顶部链接上时，展开渐变的下划线，文字变大并加粗 */
 #theme-hexo .menu-link:hover {
     background-size: 100% 2px; /* 鼠标悬停时，背景的宽度变为 100%（填满整个菜单项的宽度），高度保持为 2px */
     color: #5631CE; /* 改变文字颜色为深紫蓝色 */
+    font-size: 2rem; /* 鼠标悬停时文字变大（可以根据需要调整） */
+    font-weight: bold; /* 鼠标悬停时文字加粗 */
 }
+
 
 /* 在头部封面上添加渐变效果 */
 #theme-hexo .header-cover::before {
