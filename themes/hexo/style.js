@@ -70,7 +70,26 @@ const Style = () => {
         scrollbar-width:thin;/* 设置滚动条的宽度为细 */
         scrollbar-color: #e5a9cb transparent/* 设置滚动条的颜色为粉色*/
     }
-    
+  /* 目录进度条：设置进度条背景色 */
+.h-4.bg-indigo-400 {
+    background-color: #9c26b0; /* 设置进度条的背景颜色为紫色 */
+}
+
+/* 文章页隐藏字数 */
+#wordCountWrapper > span:nth-child(1) {
+    display: none !important; /* 隐藏字数信息 */
+}
+
+/* 文章页隐藏阅读时长 */
+#wordCountWrapper > span:nth-child(2) {
+    display: none !important; /* 隐藏阅读时长信息 */
+}
+
+/* 打开字数和阅读时长，去除之前的隐藏设置 */
+#wordCountWrapper > span:nth-child(1),
+#wordCountWrapper > span:nth-child(2) {
+    display: inline !important; /* 使字数和阅读时长显示出来 */
+}  
 
   `}</style>)
 }
