@@ -27,7 +27,7 @@ const Style = () => {
 /* 当鼠标悬停在菜单链接上时，展开渐变的下划线 */
 #theme-hexo .menu-link:hover {
     background-size: 100% 2px; /* 鼠标悬停时，背景的宽度变为 100%（填满整个菜单项的宽度），高度保持为 2px */
-    color: #AAB1F8; /* 改变文字颜色为浅蓝色 */
+    color: #F2F4DB; /* 改变文字颜色为浅黄色 */
 }
 
 /* 在头部封面上添加渐变效果 */
@@ -38,7 +38,7 @@ const Style = () => {
     left: 0; /* 设置伪元素的位置，左侧对齐 */
     width: 100%; /* 伪元素宽度为父元素的 100% */
     height: 100%; /* 伪元素高度为父元素的 100% */
-    background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 10%, rgba(0,0,0,0) 25%, rgba(0,0,0,0.2) 75%, rgba(0,0,0,0.5) 100%); 
+    background: linear-gradient(to bottom, #7FB2DA 0%, #7FB2DA 10%, #7FB2DA 25%, #7FB2DA 75%, #7FB2DA 100%); 
     /* 创建一个从上到下的黑色渐变效果：透明到半透明黑色，再到透明，给封面添加层次感 */
 }
 
