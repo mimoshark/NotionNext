@@ -52,21 +52,21 @@ const Style = () => {
 
     // 自定义滚动条
     ::-webkit-scrollbar {
-        width: 5px;
-        height: 5px;
+        width: 10px; /* 设置滚动条的宽度 */
+        height: 5px;/* 设置滚动条的高度（对于水平滚动条） */
     }
 
     ::-webkit-scrollbar-track {
-        background: transparent;
+        background: transparent;/* 设置滚动条轨道的背景为透明 */
     }
 
     ::-webkit-scrollbar-thumb {
-        background-color: #49b1f5;
+        background-color: #f2f4db;/* 设置滚动条的滑块（thumb）的背景颜色为黄色 */
     }
 
     * {
-        scrollbar-width:thin;
-        scrollbar-color: #9c26b0 transparent
+        scrollbar-width:thin;/* 设置滚动条的宽度为细 */
+        scrollbar-color: #e5a9cb transparent/* 设置滚动条的颜色为粉色*/
     }
     
 
