@@ -47,7 +47,7 @@ const Style = () => {
 
     // 选中字体颜色
     ::selection {
-        background: #B8CBFA;
+        background: #7FB2DA;
     }
 
     // 自定义滚动条
@@ -59,9 +59,10 @@ const Style = () => {
     ::-webkit-scrollbar-track {
         background: transparent;/* 设置滚动条轨道的背景为透明 */
     }
-
+    /* 滚动条滑块（thumb）使用图片 */
     ::-webkit-scrollbar-thumb {
-        background-color: #f2f4db;/* 设置滚动条的滑块（thumb）的背景颜色为黄色 */
+    background-image: url('https://www.flaticon.com/svg/static/icons/svg/1230/1230311.svg');  /* 替换为图标链接 */
+    background-size: cover;  /* 使图片填充滑块区域 */
     }
 
     * {
