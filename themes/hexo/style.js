@@ -11,7 +11,7 @@ const Style = () => {
         background-color: #DCE8F8/* 背景色为浅蓝色 */
     }
     .dark body{
-        background-color: black;/* 当启用暗色模式时，设置背景颜色为黑色 */
+        background-color: #03477C;/* 当启用暗色模式时，设置背景颜色为黑色 */
     }
  
     /*  菜单下划线动画 */
@@ -24,10 +24,10 @@ const Style = () => {
         transition: background-size 100ms ease-in-out;/* 设置背景大小变化的过渡动画，持续 100ms，使用 ease-in-out 缓动函数 */
     }
 
-/* 当鼠标悬停在菜单链接上时，展开渐变的下划线 */
+/* 当鼠标悬停在右侧文章菜单链接上时，展开渐变的下划线 */
 #theme-hexo .menu-link:hover {
     background-size: 100% 2px; /* 鼠标悬停时，背景的宽度变为 100%（填满整个菜单项的宽度），高度保持为 2px */
-    color: #F2F4DB; /* 改变文字颜色为浅黄色 */
+    color: #5631CE; /* 改变文字颜色为深紫蓝色 */
 }
 
 /* 在头部封面上添加渐变效果 */
@@ -68,7 +68,7 @@ const Style = () => {
 
     * {
         scrollbar-width:thin;/* 设置滚动条的宽度为细 */
-        scrollbar-color: #e5a9cb transparent/* 设置滚动条的颜色为粉色*/
+        scrollbar-color: #5631CE transparent/* 设置滚动条的颜色为深紫蓝色*/
     }
 }
 import React, { useState, useEffect } from 'react';
