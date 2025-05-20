@@ -6,9 +6,7 @@ import { formatDateFmt } from '@/lib/utils/formatDate'
 import Link from 'next/link'
 import TagItemMini from './TagItemMini'
 
-/**
- * 文章详情页的Hero块
- */
+// 文章详情页的Hero块
 export default function PostHero({ post, siteInfo }) {
   const { locale, fullWidth } = useGlobal()
 
@@ -24,8 +22,6 @@ export default function PostHero({ post, siteInfo }) {
   if (fullWidth) {
     return <div className='my-8' />
   }
-  // ...其余代码保持不变
-}
 
   const headerImage = post?.pageCover ? post.pageCover : siteInfo?.pageCover
 
@@ -39,7 +35,7 @@ export default function PostHero({ post, siteInfo }) {
 
       <header
         id='article-header-cover'
-        className='bg-black bg-opacity-70 absolute top-0 w-full h-96 py-10 flex justify-center items-center '>
+        className='bg-black bg-opacity-70 absolute top-0 w-full h-96 py-10 flex justify-center items-center'>
         <div className='mt-10'>
           <div className='mb-3 flex justify-center'>
             {post.category && (
