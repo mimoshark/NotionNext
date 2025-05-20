@@ -62,7 +62,7 @@ const Style = () => {
     }
     /* 滚动条滑块（thumb）使用图片 */
     ::-webkit-scrollbar-thumb {
-    background-image: url('https://www.flaticon.com/svg/static/icons/svg/1230/1230311.svg');  /* 替换为图标链接 */
+    background-image: url('https://img.icons8.com/ios/50/shark-body.png');  /* 替换为图标链接 */
     background-size: cover;  /* 使图片填充滑块区域 */
     }
 
